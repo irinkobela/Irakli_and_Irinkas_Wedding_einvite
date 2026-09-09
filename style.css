@@ -3,7 +3,7 @@
   --paper-warm:#f8eee8;
   --ink:#3f2f31;
   --muted:#7d6c68;
-  --raspberry:#b83252;
+  --raspberry:#d33c00;
   --rose:#d85b73;
   --blush:#efb4c2;
   --apricot:#e58a43;
@@ -128,7 +128,7 @@ img{display:block;max-width:100%}
 
 .hero{
   min-height:100svh;
-  padding:114px 0 62px;
+  padding:96px 0 40px;
   display:grid;
   align-items:center;
   gap:30px;
@@ -138,28 +138,28 @@ img{display:block;max-width:100%}
 .hero-kicker{
   margin:0 auto 20px;
   max-width:34rem;
-  color:var(--muted);
+  color:var(--ink);
   line-height:1.75;
   font-size:.98rem;
   white-space:pre-line;
 }
 .hero h1{
-  margin:0;
+  margin:0 0 18px;
   display:flex;
   align-items:center;
   justify-content:center;
   gap:.24em;
   flex-wrap:wrap;
   font-family:"Cormorant Garamond","Noto Serif Georgian",serif;
-  font-size:clamp(3.6rem,18vw,6.7rem);
-  line-height:.86;
+  font-size:clamp(3rem,14vw,5.4rem);
+  line-height:.9;
   font-weight:500;
-  letter-spacing:-.055em;
+  letter-spacing:-.045em;
 }
 .hero h1 em{
   color:var(--raspberry);
   font-weight:400;
-  font-size:.68em;
+  font-size:.8em;
 }
 .hero-date{
   margin:24px 0 0;
@@ -167,7 +167,7 @@ img{display:block;max-width:100%}
   font-size:.82rem;
   letter-spacing:.11em;
   text-transform:uppercase;
-  color:var(--bronze);
+  color:var(--ink);
 }
 
 .floral-cluster{
@@ -186,12 +186,12 @@ img{display:block;max-width:100%}
 }
 .floral-cluster::before{
   background:
-    radial-gradient(circle at 50% 50%, rgba(233,188,84,.95) 0 9%, transparent 10%),
-    radial-gradient(circle at 50% 11%, rgba(216,91,115,.72) 0 22%, transparent 23%),
-    radial-gradient(circle at 86% 32%, rgba(190,67,96,.72) 0 22%, transparent 23%),
-    radial-gradient(circle at 78% 80%, rgba(229,138,67,.72) 0 22%, transparent 23%),
-    radial-gradient(circle at 22% 80%, rgba(244,216,183,.82) 0 22%, transparent 23%),
-    radial-gradient(circle at 14% 32%, rgba(239,180,194,.78) 0 22%, transparent 23%);
+    radial-gradient(circle at 50% 50%, rgba(233, 188, 84, 0.807) 0 9%, transparent 10%),
+    radial-gradient(circle at 50% 11%, rgba(216, 91, 116, 0.625) 0 22%, transparent 23%),
+    radial-gradient(circle at 86% 32%, rgba(190, 67, 96, 0.574) 0 22%, transparent 23%),
+    radial-gradient(circle at 78% 80%, rgba(229, 137, 67, 0.589) 0 22%, transparent 23%),
+    radial-gradient(circle at 22% 80%, rgba(244, 216, 183, 0.593) 0 22%, transparent 23%),
+    radial-gradient(circle at 14% 32%, rgba(239, 180, 194, 0.597) 0 22%, transparent 23%);
 }
 .floral-cluster::after{
   inset:auto;
@@ -267,8 +267,8 @@ img{display:block;max-width:100%}
 }
 .button:active{transform:translateY(1px)}
 .button-primary{
-  color:white;
-  background:linear-gradient(135deg,var(--raspberry),var(--rose));
+  color:rgba(67, 47, 29, 0.732);
+  background:linear-gradient(135deg,var(--rose), var(--apricot));
   box-shadow:0 12px 24px rgba(184,50,82,.2);
 }
 .button-ghost{
@@ -278,7 +278,7 @@ img{display:block;max-width:100%}
 }
 .button.full{width:100%}
 
-.day-section,.locations-section,.dress-section,.rsvp-section,.weather-section{padding:74px 0}
+.day-section,.locations-section,.dress-section,.rsvp-section,.weather-section{padding:52px 0}
 .section-heading{text-align:center;margin:0 auto 30px;max-width:760px}
 .eyebrow{
   margin:0 0 10px;
@@ -298,6 +298,7 @@ img{display:block;max-width:100%}
   line-height:1.05;
   font-weight:500;
   letter-spacing:-.028em;
+  
 }
 .section-subtitle{
   max-width:680px;
@@ -412,24 +413,6 @@ img{display:block;max-width:100%}
 }
 .map-frame iframe{width:100%;height:100%;border:0;display:block}
 
-.weather-card{
-  padding:20px;
-  background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(248,238,232,.72));
-}
-.weather-place{display:flex;align-items:center;gap:12px}
-.weather-pin{
-  min-width:56px;height:40px;border-radius:999px;padding:0 10px;
-  display:grid;place-items:center;
-  background:rgba(229,138,67,.11);color:var(--apricot);
-  font-family:"Manrope",sans-serif;font-size:.72rem;font-weight:600;
-}
-.weather-place h3{margin:0;font-size:1.05rem;font-weight:500}
-.weather-place p{margin:2px 0 0;color:var(--muted);font-size:.82rem}
-.weather-value{margin-top:18px;display:flex;align-items:center;gap:12px}
-.weather-symbol{font-size:2rem}
-.weather-temp{font-family:"Cormorant Garamond",serif;font-size:3rem;font-weight:500;line-height:1}
-.weather-detail{margin:10px 0 0;color:var(--muted);font-size:.82rem;line-height:1.55}
-
 .dress-card{
   position:relative;
   overflow:hidden;
@@ -437,10 +420,10 @@ img{display:block;max-width:100%}
   padding:38px 22px;
   border-radius:32px;
   color:#000000;
-  background:linear-gradient(145deg,#f8eee8,#f8eee8);
+  background:linear-gradient(145deg,#ffffff,#ffffff);
   box-shadow:var(--shadow);
 }
-.dress-card .eyebrow{color:#f4d6ca}
+.dress-card .eyebrow{color:var(--raspberry)}
 .palette{margin:24px auto 0;display:flex;justify-content:center;gap:9px}
 .palette span{
   width:34px;height:34px;border-radius:50%;background:var(--swatch);border:2px solid rgba(255,255,255,.8);box-shadow:0 4px 12px rgba(0,0,0,.12);
@@ -534,9 +517,9 @@ footer p:last-child{margin:0}
 }
 
 @media (min-width:940px){
-  .hero{min-height:100vh;padding-top:110px}
+  .hero{min-height:100vh;padding-top:92px}
   .hero h1{font-size:clamp(5.2rem,8vw,8.1rem)}
-  .day-section,.locations-section,.dress-section,.rsvp-section,.weather-section{padding:100px 0}
+  .day-section,.locations-section,.dress-section,.rsvp-section,.weather-section{padding:74px 0}
   .cluster-a{left:3%;top:18%}
   .cluster-b{right:4%;top:22%}
   .cluster-c{bottom:8%}
