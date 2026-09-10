@@ -127,7 +127,7 @@ img{display:block;max-width:100%}
 }
 
 .hero{
-  min-height:auto;
+  min-height:100svh;
   padding:96px 0 24px;
   display:grid;
   align-items:center;
