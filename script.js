@@ -16,7 +16,7 @@ const translations = {
     ourDay:"ჩვენი დღე", celebrate:"გაიზიარეთ ჩვენი სიხარული",
     ceremony:"ჯვრისწერა", monastery:"სამთავროს მონასტერი, მცხეთა",
     eveningVenue:"საღამოს ლოკაცია", lisi:"ლისი ივენთ ჰოლი, თბილისი",
-    champagne:"შამპანურით დახვედრა", signing:"ხელის მოწერის ცერემონია", reception:"საზეიმო წვეულება",
+    champagne:"შამპანურის Welcome", signing:"ხელის მოწერის ცერემონია", reception:"საზეიმო წვეულება",
     map:"რუკის ნახვა",
     locationsKicker:"ლოკაციები", locationsTitle:"მისამართები და რუკა", weatherKicker:"29 სექტემბრისთვის", weatherTitle:"ქორწილის დღის ამინდი",
     weatherWaiting:"ზუსტი პროგნოზი აქ ავტომატურად გამოჩნდება ქორწილის თარიღთან მოახლოებისას.",
@@ -151,7 +151,7 @@ function downloadCalendarInvite(){
   const uid = "irine-irakli-20260929@wedding";
   const summary = language === "ka" ? "ირინე & ირაკლი — ქორწილი" : "Irine & Irakli — Wedding";
   const description = language === "ka"
-    ? "ჯვრისწერა — სამთავროს მონასტერი, მცხეთა, 15:00. შამპანურით დახვედრა — 17:00. ხელის მოწერის ცერემონია — 17:30. საზეიმო წვეულება — 18:00. ლისი ივენთ ჰოლი, თბილისი."
+    ? "ჯვრისწერა — სამთავროს მონასტერი, მცხეთა, 15:00. შამპანურის Welcome — 17:00. ხელის მოწერის ცერემონია — 17:30. საზეიმო წვეულება — 18:00. ლისი ივენთ ჰოლი, თბილისი."
     : "Church ceremony — Samtavro Monastery, Mtskheta, 15:00. Champagne Welcome — 17:00. Signing Ceremony — 17:30. Wedding Reception — 18:00. Lisi Event Hall, Tbilisi.";
 
   const ics = [
